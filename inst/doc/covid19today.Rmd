@@ -14,10 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(covid19today)
-```
-
 ## covid19todays
 
 You can get today's world covid19 data to use this library
@@ -33,6 +29,8 @@ there's 3 option of data
 - continent: you can see the covid19 data of all continent
 
 ```{r, eval=FALSE}
+library(covid19today)
+
 get_data("country")
 ```
 

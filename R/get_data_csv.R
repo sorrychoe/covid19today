@@ -6,8 +6,10 @@
 #' @examples
 #' get_data_csv("total")
 #'
+#' @import covid19today
+#'
 #' @export
-get_data_csv <- function(id){
+get_data_csv <- function(id) {
   data <- get_data(id)
   write.csv(data, "covid19.csv")
 }
