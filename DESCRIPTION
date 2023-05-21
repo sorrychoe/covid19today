@@ -10,7 +10,8 @@ Maintainer: Jaeseong Choe <cjssoote@gmail.com>
 Imports: 
     dplyr,
     rvest,
-    knitr
+    knitr,
+    rmarkdown
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
