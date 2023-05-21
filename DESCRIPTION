@@ -1,10 +1,10 @@
 Package: covid19today
-Title: What the Package Does (One Line, Title Case)
-Version: 0.1.0.9000
+Title: get today's world covid19 data
+Version: 0.1.1.9000
 Authors@R: c(
   person("Jaeseong", "Choe",, "cjssoote@gmail.com", role = c("aut", "cre"))
   )
-Description: get today's world covid19 data
+Description: covid19today is a library that extracts today’s covid-19 data of the world.
 Author: Jaeseonc Choe [aut, cre]
 Maintainer: Jaeseong Choe <cjssoote@gmail.com>
 Imports: 
@@ -17,3 +17,5 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 VignetteBuilder: knitr
+Suggests: 
+    rmarkdown
