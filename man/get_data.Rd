@@ -13,5 +13,4 @@ and seperate continent, country and total data
 \examples{
 get_data("total")
 
-
 }
