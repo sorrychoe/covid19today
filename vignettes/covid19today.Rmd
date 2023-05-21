@@ -34,17 +34,13 @@ library(covid19today)
 ```
 
 ```{r, eval=FALSE}
+get_data("total")
+```
+
+```{r, eval=FALSE}
 get_data("country")
 ```
 
-If you want to extract data to use other language or Tools,
-you can extract csv & excel file to use **get_data_excel()** & **get_data_csv()**
-
 ```{r, eval=FALSE}
-get_data_csv("total")
-```
-
-
-```{r, eval=FALSE}
-get_data_excel("continent")
+get_data("continent")
 ```
