@@ -29,10 +29,6 @@ there's 3 option of data
 - country: country data is consist of all country's covid19 stat
 - continent: you can see the covid19 data of all continent
 
-```{r setup}
-library(covid19today)
-```
-
 ```{r, eval=FALSE}
 get_data("total")
 ```
