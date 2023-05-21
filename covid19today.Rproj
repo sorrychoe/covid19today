@@ -18,9 +18,10 @@ LineEndingConversion: Posix
 
 BuildType: Package
 PackageUseDevtools: Yes
-PackageInstallArgs: --no-multiarch --with-keep.source
 PackageRoxygenize: rd,collate,namespace
 
 UseNativePipeOperator: Yes
+
+ZoteroLibraries: "My Library"
 
 SpellingDictionary: en_US
