@@ -4,13 +4,13 @@
 \alias{get_data_excel}
 \title{get_data_excel()}
 \usage{
-get_data_excel()
+get_data_excel(id)
 }
 \description{
 scraping information of today's covid19
 and return xlsx file
 }
 \examples{
-get_data_excel()
+get_data_excel("total")
 
 }

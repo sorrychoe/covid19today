@@ -4,14 +4,14 @@
 \alias{get_data}
 \title{get_data()}
 \usage{
-get_data()
+get_data(id)
 }
 \description{
 scraping information of today's covid19
 and seperate continent, country and total data
 }
 \examples{
-get_data()
+get_data("total")
 
 
 }

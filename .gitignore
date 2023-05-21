@@ -53,3 +53,6 @@ rsconnect/
 
 # Meta file
 Meta/
+docs
+/doc/
+/Meta/

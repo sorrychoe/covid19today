@@ -8,11 +8,11 @@ knitr::opts_chunk$set(
 library(covid19today)
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  get_data()
+#  get_data("country")
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  get_data_csv()
+#  get_data_csv("total")
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  get_data_excel()
+#  get_data_excel("continent")
 

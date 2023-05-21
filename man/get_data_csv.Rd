@@ -4,13 +4,13 @@
 \alias{get_data_csv}
 \title{get_data_csv()}
 \usage{
-get_data_csv()
+get_data_csv(id)
 }
 \description{
 scraping information of today's covid19
 and return csv file
 }
 \examples{
-get_data_csv()
+get_data_csv("total")
 
 }

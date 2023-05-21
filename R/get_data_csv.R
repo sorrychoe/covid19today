@@ -4,13 +4,10 @@
 #' and return csv file
 #'
 #' @examples
-#' get_data_csv()
+#' get_data_csv("total")
 #'
 #' @export
-get_data_csv <- function(){
-  get_data()
-
-  write.csv(total,"csv/total_covid19.csv")
-  write.csv(cont, "csv/cont_covid19.csv")
-  write.csv(corona, "csv/covid19.csv")
+get_data_csv <- function(id){
+  data <- get_data(id)
+  write.csv(data, "covid19.csv")
 }

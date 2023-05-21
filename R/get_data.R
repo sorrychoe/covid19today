@@ -4,13 +4,13 @@
 #' and seperate continent, country and total data
 #'
 #' @examples
-#' get_data()
+#' get_data("total")
 #'
 #'
 #' @import rvest
 #' @import dplyr
 #' @export
-get_data <- function(){
+get_data <- function(id){
   url <- "https://www.worldometers.info/coronavirus/#main_table"
   page <- read_html(url)
 
@@ -30,4 +30,16 @@ get_data <- function(){
   total<- corona.data[240:247,]
   cont <- corona.data[1:7,]
   corona <- corona.data |> anti_join(cont) |> anti_join(total)
+
+  if (id == "total"){
+    data <- total
+  }else if (id == "continent"){
+    data <- cont
+  }else if (id == "country"){
+    data <- corona
+  } else{
+    cat("there's no option >>", id)
+  }
+
+  return(data)
   }

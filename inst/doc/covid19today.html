@@ -349,12 +349,18 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h2>About Function</h2>
 <p>You can get <strong>get_data()</strong> function to get today’s
 covid19 data</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data</span>()</span></code></pre></div>
+<p>there’s 3 option of data</p>
+<ul>
+<li>total: you can see total dataset of world covid19 data</li>
+<li>country: country data is consist of all country’s covid19 stat</li>
+<li>continent: you can see the covid19 data of all continent</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data</span>(<span class="st">&quot;country&quot;</span>)</span></code></pre></div>
 <p>If you want to extract data to use other language or Tools, you can
 extract csv &amp; excel file to use <strong>get_data_excel()</strong>
 &amp; <strong>get_data_csv()</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data_csv</span>()</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data_excel</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data_csv</span>(<span class="st">&quot;total&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_data_excel</span>(<span class="st">&quot;continent&quot;</span>)</span></code></pre></div>
 </div>
 
 
