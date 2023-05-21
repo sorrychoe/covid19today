@@ -1,0 +1,43 @@
+---
+title: "get today's covid19 data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{get today's covid19 data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covid19today)
+```
+
+## covid19todays
+
+You can get today's world covid19 data to use this library
+
+## About Function
+
+You can get **get_data()** function to get today's covid19 data
+
+```{r, eval=FALSE}
+get_data()
+```
+
+If you want to extract data to use other language or Tools,
+you can extract csv & excel file to use **get_data_excel()** & **get_data_csv()**
+
+```{r, eval=FALSE}
+get_data_csv()
+```
+
+
+```{r, eval=FALSE}
+get_data_excel()
+```
