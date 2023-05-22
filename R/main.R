@@ -9,7 +9,7 @@
 #' @import rvest
 #' @import dplyr
 #' @export
-get_data <- function(id) {
+get_data <- function(option) {
   url <- "https://www.worldometers.info/coronavirus/#main_table"
   page <- read_html(url)
 
@@ -34,15 +34,47 @@ get_data <- function(id) {
     anti_join(cont) |>
     anti_join(total)
 
-  if (id == "total") {
+  if (option == "total") {
     data <- total
-  } else if (id == "continent") {
+  } else if (option == "continent") {
     data <- cont
-  } else if (id == "country") {
+  } else if (option == "country") {
     data <- corona
   } else {
-    cat("there's no option >>", id)
+    cat("there's no option >>", option)
+    data <- NULL
   }
-
   return(data)
+}
+
+#' get_data_csv()
+#'
+#' scraping information of today's covid19
+#' and return csv file
+#'
+#' @examples
+#' get_data_csv("total")
+#'
+#' @importFrom utils read.csv
+#' @export
+get_data_csv <- function(option) {
+  data <- get_data(option)
+  utils::write.csv(data, "covid19.csv")
+}
+
+
+#' get_data_excel()
+#'
+#' scraping information of today's covid19
+#' and return xlsx file
+#'
+#' @examples
+#' get_data_excel("total")
+#'
+#' @importFrom writexl write_xlsx
+#'
+#' @export
+get_data_excel <- function(option) {
+  data <- get_data(option)
+  writexl::write_xlsx(data, path = "covid19.xlsx")
 }
