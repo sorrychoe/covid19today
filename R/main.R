@@ -4,7 +4,7 @@
 #' and seperate continent, country and total data
 #'
 #' @examples
-#' get_data("total")
+#' get_data("country")
 #'
 #' @import rvest
 #' @import dplyr
@@ -34,9 +34,7 @@ get_data <- function(option) {
     anti_join(cont) |>
     anti_join(total)
 
-  if (option == "total") {
-    data <- total
-  } else if (option == "continent") {
+   if (option == "continent") {
     data <- cont
   } else if (option == "country") {
     data <- corona
