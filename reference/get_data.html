@@ -61,35 +61,25 @@ and seperate continent, country and total data</p>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">get_data</span><span class="op">(</span><span class="st">"country"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>NAs introduced by coercion</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>NAs introduced by coercion</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>NAs introduced by coercion</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>NAs introduced by coercion</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Joining with `by = join_by(Country, Continent, TotalCases, NewCases,</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> TotalDeaths, NewDeaths, TotalRecovered, NewRecovered, ActiveCases, Critical,</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> `Tot Cases/1M pop`, `Deaths/1M pop`, TotalTests, `Tests/1M pop`, Population)`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Joining with `by = join_by(Country, Continent, TotalCases, NewCases,</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> TotalDeaths, NewDeaths, TotalRecovered, NewRecovered, ActiveCases, Critical,</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> `Tot Cases/1M pop`, `Deaths/1M pop`, TotalTests, `Tests/1M pop`, Population)`</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Country     Continent TotalCases NewCases TotalDeaths NewDeaths</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   World           All  689274736    17947     6882708        15</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1   World           All  689280993    22646     6882766        40</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     USA North America  107081655       NA     1164934        NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   India          Asia   44988426       NA      531854        NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3   India          Asia   44988916       NA      531856        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4  France        Europe   40070566       NA      167207        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 Germany        Europe   38425811       NA      174209        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6  Brazil South America   37579028       NA      702664        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   TotalRecovered NewRecovered ActiveCases Critical Tot Cases/1M pop</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      661653441        11959    20738587    38194            88428</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      661658792        16280    20739435    38179            88428</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      105142240           NA      774481     1054           319833</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       44450404           NA        6168       NA            31983</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       44451353           NA        5707       NA            31983</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4       39845579           NA       57780      869           610976</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5       38234500         1000       17102       NA           458085</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6       36249161           NA      627203       NA           174499</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Deaths/1M pop TotalTests Tests/1M pop Population</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1           883         NA           NA         NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2          3479 1180230821      3525126  334805269</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3           378  929823259       661028 1406631776</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3           378  929948012       661117 1406631776</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4          2549  271490188      4139547   65584518</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5          2077  122332384      1458359   83883596</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6          3263   63776166       296146  215353593</span>
