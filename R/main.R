@@ -37,7 +37,8 @@ get_data <- function(option) {
   cont <- corona.data[1:7, ]
   corona <- corona.data |>
     anti_join(cont) |>
-    anti_join(total)
+    anti_join(total) |>
+    suppressMessages()
 
    if (option == "continent") {
     data <- cont
