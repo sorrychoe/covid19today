@@ -11,6 +11,6 @@ scraping information of today's covid19
 and seperate continent, country and total data
 }
 \examples{
-get_data("country")
-
+data < -get_data("country")
+summary(data)
 }
