@@ -15,13 +15,13 @@ template:
 
 reference:
 - title: get covid19 data
-  desc:  covid19today is a library that extracts "today’s covid-19 data" of the world.
+  desc:  covid19today is a library that extracts "today's covid-19 data" of the world.
   contents:
   - covid19today
-- subtitle: gather data
+- subtitle: gathering data
   contents:
-  - starts_with("get_")
-- subtitle: export data
+  - ends_with("_data")
+- subtitle: gather & export data
   contents:
   - ends_with("_csv")
   - ends_with("_excel")

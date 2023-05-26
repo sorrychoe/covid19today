@@ -22,14 +22,16 @@ get_data <- function(option) {
     html_table(fill = TRUE) |>
     as_tibble()
 
-  data <- data[, 2:16]
-  colnames(data)[1] <- "Country"
-  colnames(data)[9] <- "Critical"
+  suppressWarnings({
+    data <- data[, 2:16]
+    colnames(data)[1] <- "Country"
+    colnames(data)[9] <- "Critical"
 
-  data[, c(1, 15)] -> world
-  numeric.data <- apply(data[, 2:14], 2, function(x) as.numeric(gsub(",", "", x))) |>
-    as_tibble()
-  cbind(world, numeric.data) -> corona.data
+    data[, c(1, 15)] -> world
+    numeric.data <- apply(data[, 2:14], 2, function(x) as.numeric(gsub(",", "", x))) |>
+      as_tibble()
+    cbind(world, numeric.data) -> corona.data
+  })
 
   total <- corona.data[240:247, ]
   cont <- corona.data[1:7, ]
