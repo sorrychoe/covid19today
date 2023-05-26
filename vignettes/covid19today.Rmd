@@ -33,7 +33,7 @@ library(covid19today)
 ```
 
 ```{r, eval=FALSE}
-get_data("country")
+data <- get_data("country")
 ```
 
 If you want to extract data to use other language or Tools,

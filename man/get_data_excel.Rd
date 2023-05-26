@@ -11,6 +11,6 @@ scraping information of today's covid19
 and return xlsx file
 }
 \examples{
-get_data_excel("total")
+get_data_excel("continent")
 
 }

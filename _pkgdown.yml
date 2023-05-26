@@ -2,18 +2,25 @@ title: covid19today
 
 url: https://sorrychoe.github.io/covid19today/
 
+home:
+  title: get today's world covid19 data
+
+authors:
+  Jaeseong Choe:
+    href: https://github.com/sorrychoe
+
 template:
   bootstrap: 5
   bootswatch: flatly
 
 reference:
-- title: get today's world covid19 data
+- title: get covid19 data
   desc:  covid19today is a library that extracts "today’s covid-19 data" of the world.
   contents:
-  - covid19today's function
+  - covid19today
 - subtitle: gather data
   contents:
-  - ends_with("_data")
+  - starts_with("get_")
 - subtitle: export data
   contents:
   - ends_with("_csv")

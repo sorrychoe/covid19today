@@ -51,7 +51,7 @@ get_data <- function(option) {
 #' and return csv file
 #'
 #' @examples
-#' get_data_csv("total")
+#' get_data_csv("continent")
 #'
 #' @importFrom utils read.csv
 #' @export
@@ -67,7 +67,7 @@ get_data_csv <- function(option) {
 #' and return xlsx file
 #'
 #' @examples
-#' get_data_excel("total")
+#' get_data_excel("continent")
 #'
 #' @importFrom writexl write_xlsx
 #'

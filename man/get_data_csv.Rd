@@ -11,6 +11,6 @@ scraping information of today's covid19
 and return csv file
 }
 \examples{
-get_data_csv("total")
+get_data_csv("continent")
 
 }
