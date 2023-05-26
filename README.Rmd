@@ -28,20 +28,13 @@ The package can be installed with the `devtools` package
 
 ## Usage
 
+You can use `get_data()` function to gather today's world covid19 data
+
 ```r
 data <- get_data(country)
 
 # country: covid-19 data by country
 # continent: covid-19 data by continent
-```
-
-If you want to use it at other languages & tools, 
-then you can extract that data as a csv or excel file.
-
-```r
-get_data_excel(country) # get .xlsx file
-
-get_data_csv(continent) # get .csv file
 ```
 
 ## License
