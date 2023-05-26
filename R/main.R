@@ -3,9 +3,12 @@
 #' scraping information of today's covid19
 #' and seperate continent, country and total data
 #'
+#' @param option character. is country or continent
+#'
 #' @examples
-#' data < -get_data("country")
-#' summary(data)
+#' data <- get_data("country")
+#' head(data)
+#'
 #' @import rvest
 #' @import dplyr
 #' @export
@@ -50,6 +53,8 @@ get_data <- function(option) {
 #' scraping information of today's covid19
 #' and return csv file
 #'
+#' @param option character. is country or continent
+#'
 #' @examples
 #' get_data_csv("continent")
 #'
@@ -65,6 +70,8 @@ get_data_csv <- function(option) {
 #'
 #' scraping information of today's covid19
 #' and return xlsx file
+#'
+#' @param option character. is country or continent
 #'
 #' @examples
 #' get_data_excel("continent")

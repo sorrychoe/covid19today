@@ -8,11 +8,13 @@ NULL
 #> NULL
 
 # ### common
-# devtools::use_package("knitr",       "Suggests")
+# devtools::use_package("knitr","Suggests")
+# devtools::use_package("rmarkdown","Suggests")
+# devtools::use_package("testthat","Suggests")
 #
 # ### gather
-# devtools::use_package("dplyr",    "Imports")
-# devtools::use_package("rvest",    "Imports")
+# devtools::use_package("dplyr","Imports")
+# devtools::use_package("rvest","Imports")
 #
 # ### export
-# devtools::use_package("writexl",  "Imports")
+# devtools::use_package("writexl",Imports")

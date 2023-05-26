@@ -6,6 +6,9 @@
 \usage{
 get_data_excel(option)
 }
+\arguments{
+\item{option}{character. is country or continent}
+}
 \description{
 scraping information of today's covid19
 and return xlsx file
