@@ -1,0 +1,8 @@
+"","Country","Continent","TotalCases","NewCases","TotalDeaths","NewDeaths","TotalRecovered","NewRecovered","ActiveCases","Critical","Tot Cases/1M pop","Deaths/1M pop","TotalTests","Tests/1M pop","Population"
+"1","North America","North America",126695452,NA,1633233,NA,122569165,NA,2493054,6220,NA,NA,NA,NA,NA
+"2","Asia","Asia",217403422,17947,1546473,15,201089197,8139,14767752,15424,NA,NA,NA,NA,NA
+"3","Europe","Europe",249316889,NA,2060484,NA,245287445,3649,1968960,5797,NA,NA,NA,NA,NA
+"4","South America","South America",68711068,NA,1355880,NA,66471120,229,884068,10119,NA,NA,NA,NA,NA
+"5","Oceania","Australia/Oceania",14323772,NA,27858,NA,14150460,NA,145454,86,NA,NA,NA,NA,NA
+"6","Africa","Africa",12823412,NA,258765,NA,12085348,NA,479299,548,NA,NA,NA,NA,NA
+"7","","",721,NA,15,NA,706,NA,0,0,NA,NA,NA,NA,NA
