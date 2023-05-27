@@ -15,5 +15,4 @@ and return xlsx file
 }
 \examples{
 get_data_excel("continent")
-
 }

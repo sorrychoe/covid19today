@@ -16,5 +16,4 @@ and seperate continent, country and total data
 \examples{
 data <- get_data("country")
 head(data)
-
 }

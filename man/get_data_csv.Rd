@@ -15,5 +15,4 @@ and return csv file
 }
 \examples{
 get_data_csv("continent")
-
 }

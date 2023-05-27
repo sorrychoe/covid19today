@@ -8,7 +8,6 @@
 #' @examples
 #' data <- get_data("country")
 #' head(data)
-#'
 #' @import rvest
 #' @import dplyr
 #' @export
@@ -60,7 +59,6 @@ get_data <- function(option) {
 #'
 #' @examples
 #' get_data_csv("continent")
-#'
 #' @importFrom utils read.csv
 #' @export
 get_data_csv <- function(option) {
@@ -78,7 +76,6 @@ get_data_csv <- function(option) {
 #'
 #' @examples
 #' get_data_excel("continent")
-#'
 #' @importFrom writexl write_xlsx
 #'
 #' @export
