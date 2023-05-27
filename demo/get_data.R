@@ -1,5 +1,5 @@
 library(covid19today)
 
-corona <- get_data("country")
+covid19 <- get_data("country")
 
-corona
+head(covid19)
