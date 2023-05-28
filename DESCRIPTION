@@ -1,6 +1,6 @@
 Package: covid19today
 Title: get today's world covid19 data
-Version: 1.0.1.9000
+Version: 1.1.0.9000
 Authors@R: c(
   person("Jaeseong", "Choe",, "cjssoote@gmail.com", role = c("aut", "cre"))
   )
@@ -20,6 +20,7 @@ VignetteBuilder: knitr
 Suggests: 
     knitr,
     rmarkdown,
+    readxl,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://sorrychoe.github.io/covid19today/
