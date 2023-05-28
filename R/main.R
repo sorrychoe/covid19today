@@ -66,7 +66,7 @@ get_data <- function(option) {
 #' @export
 get_data_csv <- function(option) {
   data <- get_data(option)
-  utils::write.csv(data, "covid19.csv")
+  utils::write.csv(data, "covid19.csv", row.names = FALSE)
 }
 
 
