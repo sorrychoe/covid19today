@@ -25,6 +25,9 @@ get_data <- function(option) {
     data <- data[, 2:16]
     colnames(data)[1] <- "Country"
     colnames(data)[9] <- "Critical"
+    colnames(data)[10] <- "TotalCasesPer1M"
+    colnames(data)[11] <- "TotalDeathsPer1M"
+    colnames(data)[13] <- "TotalTestsPer1M"
 
     data[, c(1, 15)] -> world
     numeric.data <- apply(data[, 2:14], 2, function(x) as.numeric(gsub(",", "", x))) |>
@@ -33,7 +36,7 @@ get_data <- function(option) {
   })
 
   total <- corona.data[240:247, ]
-  cont <- corona.data[1:7, ]
+  cont <- corona.data[1:7, 2:10]
   corona <- corona.data |>
     anti_join(cont) |>
     anti_join(total) |>
@@ -53,7 +56,7 @@ get_data <- function(option) {
 #' get_data_csv()
 #'
 #' scraping information of today's covid19
-#' and return csv file
+#' and return .csv file
 #'
 #' @param option character. is country or continent
 #'
@@ -70,7 +73,7 @@ get_data_csv <- function(option) {
 #' get_data_excel()
 #'
 #' scraping information of today's covid19
-#' and return xlsx file
+#' and return .xlsx file
 #'
 #' @param option character. is country or continent
 #'
@@ -82,4 +85,59 @@ get_data_csv <- function(option) {
 get_data_excel <- function(option) {
   data <- get_data(option)
   writexl::write_xlsx(data, path = "covid19.xlsx")
+}
+
+
+#' get_data_spss()
+#'
+#' scraping information of today's covid19
+#' and return .sav file
+#'
+#' @param option character. is country or continent
+#'
+#' @examples
+#' get_data_spss("country")
+#' @importFrom haven write_sav
+#'
+#' @export
+get_data_spss <- function(option) {
+  data <- get_data(option)
+  haven::write_sav(data, path = "covid19.sav")
+}
+
+
+#' get_data_sas()
+#'
+#' scraping information of today's covid19
+#' and return .sas file
+#'
+#' @param option character. is country or continent
+#'
+#' @examples
+#' get_data_sas("continent")
+#' @importFrom haven write_xpt
+#'
+#' @export
+get_data_sas <- function(option) {
+  data <- get_data(option)
+  haven::write_xpt(data, "covid19.xpt")
+}
+
+
+
+#' get_data_stata()
+#'
+#' scraping information of today's covid19
+#' and return .stata file
+#'
+#' @param option character. is country or continent
+#'
+#' @examples
+#' get_data_stata("country")
+#' @importFrom haven write_dta
+#'
+#' @export
+get_data_stata <- function(option) {
+  data <- get_data(option)
+  haven::write_dta(data, "covid19.dta")
 }

@@ -14,5 +14,5 @@ test_that("country data is correctly shaped", {
 })
 
 test_that("ccontinent data is correctly shaped", {
-  datashapetests(continent, 15, 7)
+  datashapetests(continent, 9, 7)
 })

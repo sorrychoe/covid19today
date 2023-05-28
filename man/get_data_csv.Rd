@@ -11,7 +11,7 @@ get_data_csv(option)
 }
 \description{
 scraping information of today's covid19
-and return csv file
+and return .csv file
 }
 \examples{
 get_data_csv("continent")

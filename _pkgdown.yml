@@ -25,6 +25,9 @@ reference:
   contents:
   - ends_with("_csv")
   - ends_with("_excel")
+  - ends_with("_spss")
+  - ends_with("_sas")
+  - ends_with("_stata")
 
 footer:
   structure:

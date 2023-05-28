@@ -36,12 +36,29 @@ data <- get_data("country")
 ```
 
 If you want to extract data to use other language or Tools,
-you can extract csv & excel file to use **get_data_excel()** & **get_data_csv()**
+you can export 5 format of Tools
 
+1. .csv file
 ```{r, eval=FALSE}
 get_data_csv("country")
 ```
 
+2. .xlsx file(Excel)
 ```{r, eval=FALSE}
 get_data_excel("continent")
+```
+
+3. .sav file(SPSS)
+```{r, eval=FALSE}
+get_data_spss("country")
+```
+
+4. .xpt file(SAS)
+```{r, eval=FALSE}
+get_data_sas("continent")
+```
+
+5. .dta file(Stata)
+```{r, eval=FALSE}
+get_data_stata("country")
 ```
