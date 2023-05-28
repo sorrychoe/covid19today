@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   covid19today: covid19today.html
-last_built: 2023-05-28T08:54Z
+last_built: 2023-05-28T15:41Z
 urls:
   reference: https://sorrychoe.github.io/covid19today/reference
   article: https://sorrychoe.github.io/covid19today/articles
