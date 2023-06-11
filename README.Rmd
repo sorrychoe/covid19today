@@ -41,12 +41,6 @@ data <- get_data(country)
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
-## Authors
-
-[@sorrychoe](https://www.github.com/sorrychoe)
-
-
 ## Getting help
 
 If you encounter a clear bug, please file an issue with a minimal reproducible example on GitHub. 
