@@ -11,7 +11,7 @@ world.
 The package can be installed with the `devtools` package
 
 ``` r
-  devtools::install_github("sorrychoe/covid19today")
+devtools::install_github("sorrychoe/covid19today")
 ```
 
 ## Usage
