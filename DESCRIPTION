@@ -1,8 +1,8 @@
 Package: covid19today
 Title: get today's world covid19 data
-Version: 1.1.0.9000
+Version: 1.2.0.9000
 Authors@R: c(
-  person("Jaeseong", "Choe",, "cjssoote@gmail.com", role = c("aut", "cre"))
+  person("Jaeseong", "Choe", "cjssoote@gmail.com", role = c("aut", "cre"))
   )
 Description: covid19today is a library that extracts today’s covid-19 data of the world.
 Author: Jaeseonc Choe [aut, cre]
