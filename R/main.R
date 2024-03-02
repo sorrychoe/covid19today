@@ -21,26 +21,23 @@ get_data <- function(option) {
     html_table(fill = TRUE) |>
     as_tibble()
 
-  suppressWarnings({
-    data <- data[, 2:16]
-    colnames(data)[1] <- "Country"
-    colnames(data)[9] <- "Critical"
-    colnames(data)[10] <- "TotalCasesPer1M"
-    colnames(data)[11] <- "TotalDeathsPer1M"
-    colnames(data)[13] <- "TotalTestsPer1M"
+    suppressWarnings({
+      data <- data[, 2:15]
+      colnames(data)[1] <- "Country"
+      colnames(data)[9] <- "Critical"
+      colnames(data)[10] <- "TotalCasesPer1M"
+      colnames(data)[11] <- "TotalDeathsPer1M"
+      colnames(data)[13] <- "TotalTestsPer1M"
 
-    data[, c(1, 15)] -> world
-    numeric.data <- apply(data[, 2:14], 2, function(x) as.numeric(gsub(",", "", x))) |>
-      as_tibble()
-    cbind(world, numeric.data) -> corona.data
-  })
+      data[, c(1, 14)] -> world
+      numeric.data <- apply(data[, 2:14], 2, function(x) as.numeric(gsub(",", "", x))) |>
+        as_tibble()
+      cbind(world[,1], numeric.data) -> corona.data
+    })
 
-  total <- corona.data[240:247, ]
-  cont <- corona.data[1:7, 2:10]
-  corona <- corona.data |>
-    anti_join(cont) |>
-    anti_join(total) |>
-    suppressMessages()
+    total <- corona.data[240:247, ]
+    cont <- corona.data[1:7, 2:10]
+    corona <- corona.data[8:239,]
 
    if (option == "continent") {
     data <- cont
