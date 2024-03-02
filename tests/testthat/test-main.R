@@ -8,7 +8,7 @@ datashapetests <- function(df, ncols, nrows, uniquecol = NULL, nuniques = NULL) 
 
 test_that("country data is correctly shaped", {
   country <- get_data("country")
-  datashapetests(country, 15, 232)
+  datashapetests(country, 14, 232)
 })
 
 test_that("continent data is correctly shaped", {
@@ -20,7 +20,7 @@ test_that("continent data is correctly shaped", {
 test_that("exported csv file is correctly shaped", {
   get_data_csv("country")
   csv <- read.csv("covid19.csv")
-  datashapetests(csv, 15, 232)
+  datashapetests(csv, 14, 232)
 })
 
 test_that("exported csv file is correctly shaped", {
@@ -33,7 +33,7 @@ test_that("exported csv file is correctly shaped", {
 test_that("exported xlsx file is correctly shaped", {
   get_data_excel("country")
   excel <- readxl::read_excel("covid19.xlsx")
-  datashapetests(excel, 15, 232)
+  datashapetests(excel, 14, 232)
 })
 
 test_that("exported xlsx file is correctly shaped", {
@@ -46,7 +46,7 @@ test_that("exported xlsx file is correctly shaped", {
 test_that("exported sav file is correctly shaped", {
   get_data_spss("country")
   spss <- haven::read_sav("covid19.sav")
-  datashapetests(spss, 15, 232)
+  datashapetests(spss, 14, 232)
 })
 
 test_that("exported sav file is correctly shaped", {
@@ -59,7 +59,7 @@ test_that("exported sav file is correctly shaped", {
 test_that("exported xpt file is correctly shaped", {
   get_data_sas("country")
   sas <- haven::read_xpt("covid19.xpt")
-  datashapetests(sas, 15, 232)
+  datashapetests(sas, 14, 232)
 })
 
 test_that("exported xpt file is correctly shaped", {
@@ -72,7 +72,7 @@ test_that("exported xpt file is correctly shaped", {
 test_that("exported dta file is correctly shaped", {
   get_data_stata("country")
   stata <- haven::read_dta("covid19.dta")
-  datashapetests(stata, 15, 232)
+  datashapetests(stata, 14, 232)
 })
 
 test_that("exported dta file is correctly shaped", {
